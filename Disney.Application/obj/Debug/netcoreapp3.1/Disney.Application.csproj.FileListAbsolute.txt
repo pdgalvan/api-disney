@@ -1,0 +1,12 @@
+C:\Users\gvpab\source\repos\Disney\Disney.Application\bin\Debug\netcoreapp3.1\Disney.Domain.dll
+C:\Users\gvpab\source\repos\Disney\Disney.Application\obj\Debug\netcoreapp3.1\Disney.Application.csprojAssemblyReference.cache
+C:\Users\gvpab\source\repos\Disney\Disney.Application\obj\Debug\netcoreapp3.1\Disney.Application.AssemblyInfoInputs.cache
+C:\Users\gvpab\source\repos\Disney\Disney.Application\obj\Debug\netcoreapp3.1\Disney.Application.AssemblyInfo.cs
+C:\Users\gvpab\source\repos\Disney\Disney.Application\bin\Debug\netcoreapp3.1\Disney.Application.deps.json
+C:\Users\gvpab\source\repos\Disney\Disney.Application\bin\Debug\netcoreapp3.1\Disney.Application.dll
+C:\Users\gvpab\source\repos\Disney\Disney.Application\bin\Debug\netcoreapp3.1\Disney.Application.pdb
+C:\Users\gvpab\source\repos\Disney\Disney.Application\bin\Debug\netcoreapp3.1\Disney.Domain.pdb
+C:\Users\gvpab\source\repos\Disney\Disney.Application\obj\Debug\netcoreapp3.1\Disney.Application.csproj.CoreCompileInputs.cache
+C:\Users\gvpab\source\repos\Disney\Disney.Application\obj\Debug\netcoreapp3.1\Disney.Application.csproj.CopyComplete
+C:\Users\gvpab\source\repos\Disney\Disney.Application\obj\Debug\netcoreapp3.1\Disney.Application.dll
+C:\Users\gvpab\source\repos\Disney\Disney.Application\obj\Debug\netcoreapp3.1\Disney.Application.pdb
