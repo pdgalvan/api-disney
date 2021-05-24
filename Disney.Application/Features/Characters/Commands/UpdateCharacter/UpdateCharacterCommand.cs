@@ -1,10 +1,11 @@
-﻿using System;
+﻿using MediatR;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Disney.Application.Features.Characters.Queries.GetCharacterDetail
+namespace Disney.Application.Features.Characters.Commands.UpdateCharacter
 {
-    class CharacterDetailVm
+    class UpdateCharacterCommand : IRequest
     {
         public Guid CharacterId { get; set; }
         public string Name { get; set; }
@@ -12,6 +13,5 @@ namespace Disney.Application.Features.Characters.Queries.GetCharacterDetail
         public int Weight { get; set; }
         public string Description { get; set; }
         public string ImageUrl { get; set; }
-
     }
 }

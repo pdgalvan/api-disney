@@ -9,7 +9,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Features\Characters\Commands\CreateCharacter\" />
     <Folder Include="Features\Movies\Commands\CreateMovie\" />
   </ItemGroup>
 
