@@ -1,0 +1,14 @@
+C:\Users\gvpab\source\repos\Disney\Disney.Persistence\obj\Debug\netcoreapp3.1\Disney.Persistence.csprojAssemblyReference.cache
+C:\Users\gvpab\source\repos\Disney\Disney.Persistence\obj\Debug\netcoreapp3.1\Disney.Persistence.AssemblyInfoInputs.cache
+C:\Users\gvpab\source\repos\Disney\Disney.Persistence\obj\Debug\netcoreapp3.1\Disney.Persistence.AssemblyInfo.cs
+C:\Users\gvpab\source\repos\Disney\Disney.Persistence\obj\Debug\netcoreapp3.1\Disney.Persistence.csproj.CoreCompileInputs.cache
+C:\Users\gvpab\source\repos\Disney\Disney.Persistence\bin\Debug\netcoreapp3.1\Disney.Persistence.deps.json
+C:\Users\gvpab\source\repos\Disney\Disney.Persistence\bin\Debug\netcoreapp3.1\Disney.Persistence.dll
+C:\Users\gvpab\source\repos\Disney\Disney.Persistence\bin\Debug\netcoreapp3.1\Disney.Persistence.pdb
+C:\Users\gvpab\source\repos\Disney\Disney.Persistence\bin\Debug\netcoreapp3.1\Disney.Application.dll
+C:\Users\gvpab\source\repos\Disney\Disney.Persistence\bin\Debug\netcoreapp3.1\Disney.Domain.dll
+C:\Users\gvpab\source\repos\Disney\Disney.Persistence\bin\Debug\netcoreapp3.1\Disney.Application.pdb
+C:\Users\gvpab\source\repos\Disney\Disney.Persistence\bin\Debug\netcoreapp3.1\Disney.Domain.pdb
+C:\Users\gvpab\source\repos\Disney\Disney.Persistence\obj\Debug\netcoreapp3.1\Disney.Persistence.csproj.CopyComplete
+C:\Users\gvpab\source\repos\Disney\Disney.Persistence\obj\Debug\netcoreapp3.1\Disney.Persistence.dll
+C:\Users\gvpab\source\repos\Disney\Disney.Persistence\obj\Debug\netcoreapp3.1\Disney.Persistence.pdb

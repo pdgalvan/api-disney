@@ -8,8 +8,9 @@ namespace Disney.Domain.Entities
     {
         public Guid GenreId { get; set; }
         public string Name { get; set; }
+        public string ImageUrl { get; set; }
 
         public IEnumerable<MovieGenre> MovieGenres { get; set; }
-        // IMAGEN
+        
     }
 }
