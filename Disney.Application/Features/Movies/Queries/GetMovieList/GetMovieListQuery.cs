@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Disney.Application.Features.Movies.Queries.GetMovieList
 {
-    class GetMovieListQuery : IRequest<List<MovieListVm>>
+    public class GetMovieListQuery : IRequest<List<MovieListVm>>
     {
     }
 }

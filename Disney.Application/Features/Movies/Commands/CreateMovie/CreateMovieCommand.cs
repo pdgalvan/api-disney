@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Disney.Application.Features.Movies.Commands.CreateMovie
 {
-    public class CreateMovieCommand : IRequest<Guid>
+    public class CreateMovieCommand : IRequest<CreateMovieCommandResponse>
     {
         
         public string Name { get; set; }

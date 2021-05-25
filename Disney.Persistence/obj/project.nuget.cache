@@ -1,11 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "PeX7rdkcYASRgFvW+nyHknPa1NjUI2ZtyARxWqWAbzHoT4++nu0tDpMIZLhpX7XTrf0gdgFEkMEy+u90/dfQTw==",
+  "dgSpecHash": "tB9GLK3kOWKqdLOsJA8edFDBypyWMg26rcEkosCeM5pkjOV/AenmGxDolvmkA42PJFGM/2u4nXhu41VkyL7XwA==",
   "success": true,
   "projectFilePath": "C:\\Users\\gvpab\\source\\repos\\Disney\\Disney.Persistence\\Disney.Persistence.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\gvpab\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\gvpab\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",
+    "C:\\Users\\gvpab\\.nuget\\packages\\fluentvalidation\\10.1.0\\fluentvalidation.10.1.0.nupkg.sha512",
+    "C:\\Users\\gvpab\\.nuget\\packages\\fluentvalidation.aspnetcore\\10.1.0\\fluentvalidation.aspnetcore.10.1.0.nupkg.sha512",
+    "C:\\Users\\gvpab\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\10.1.0\\fluentvalidation.dependencyinjectionextensions.10.1.0.nupkg.sha512",
     "C:\\Users\\gvpab\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512",
     "C:\\Users\\gvpab\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\9.0.0\\mediatr.extensions.microsoft.dependencyinjection.9.0.0.nupkg.sha512",
     "C:\\Users\\gvpab\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",

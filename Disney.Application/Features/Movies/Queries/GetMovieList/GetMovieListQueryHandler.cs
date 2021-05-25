@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 using System.Linq;
 namespace Disney.Application.Features.Movies.Queries.GetMovieList
 {
-    class GetMovieListQueryHandler : IRequestHandler<GetMovieListQuery, List<MovieListVm>>
+    public class GetMovieListQueryHandler : IRequestHandler<GetMovieListQuery, List<MovieListVm>>
     {
         private readonly IMapper _mapper;
         private readonly IAsyncRepository<Movie> _movieRepository;

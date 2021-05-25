@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Disney.Application.Features.Movies.Queries.GetMovieList
 {
-    class MovieListVm
+    public class MovieListVm
     {
         public Guid MovieId { get; set; }
         public string Name { get; set; }
