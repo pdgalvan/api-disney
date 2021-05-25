@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Disney.Domain.Enumerations;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -12,8 +13,8 @@ namespace Disney.Domain.Entities
         public Rating Rating { get; set; }
         public string ImageUrl { get; set; }
 
-        public IEnumerable<MovieCharacter> MovieCharacters { get; set; }
-        public IEnumerable<MovieGenre> MovieGenres { get; set; }
+        public List<MovieCharacter> MovieCharacters { get; set; }
+        public List<MovieGenre> MovieGenres { get; set; }
 
         
 

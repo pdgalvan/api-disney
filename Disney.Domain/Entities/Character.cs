@@ -13,7 +13,7 @@ namespace Disney.Domain.Entities
         public string Description { get; set; }
         public string ImageUrl { get; set; }
 
-        public IEnumerable<MovieCharacter> MovieCharacters { get; set; }
+        public List<MovieCharacter> MovieCharacters { get; set; }
 
         
     }

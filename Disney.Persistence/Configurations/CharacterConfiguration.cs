@@ -7,7 +7,7 @@ using System.Text;
 
 namespace Disney.Persistence.Configurations
 {
-    class CharacterConfiguration : IEntityTypeConfiguration<Character>
+    public class CharacterConfiguration : IEntityTypeConfiguration<Character>
     {
         public void Configure(EntityTypeBuilder<Character> builder)
         {

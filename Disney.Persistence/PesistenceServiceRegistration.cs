@@ -15,7 +15,7 @@ namespace Disney.Persistence
                                                                 IConfiguration configuration)
         {
             services.AddDbContext<DisneyDbContext>(options =>
-                options.UseSqlServer(configuration.GetConnectionString("DisneyManagementConnectionString")));
+                options.UseSqlServer(configuration.GetConnectionString("DisneyConnectionString")));
            
 
             services.AddScoped(typeof(IAsyncRepository<>), typeof(BaseRepository<>));

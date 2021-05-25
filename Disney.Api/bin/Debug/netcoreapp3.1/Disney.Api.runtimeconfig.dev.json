@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\gvpab\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\gvpab\\.nuget\\packages"
+    ]
+  }
+}

@@ -17,7 +17,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Disney.Domain", "Disney.Dom
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Disney.Application", "Disney.Application\Disney.Application.csproj", "{03BC2389-0218-40EA-969A-915BA637AE3C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Disney.Persistence", "Disney.Persistence\Disney.Persistence.csproj", "{B3187183-36F5-42BA-80D6-DBEC24F88831}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Disney.Persistence", "Disney.Persistence\Disney.Persistence.csproj", "{B3187183-36F5-42BA-80D6-DBEC24F88831}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Disney.Api", "Disney.Api\Disney.Api.csproj", "{7FE6445D-D541-42CC-AC92-BFE6C5BC819C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,6 +39,10 @@ Global
 		{B3187183-36F5-42BA-80D6-DBEC24F88831}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B3187183-36F5-42BA-80D6-DBEC24F88831}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B3187183-36F5-42BA-80D6-DBEC24F88831}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7FE6445D-D541-42CC-AC92-BFE6C5BC819C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FE6445D-D541-42CC-AC92-BFE6C5BC819C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FE6445D-D541-42CC-AC92-BFE6C5BC819C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FE6445D-D541-42CC-AC92-BFE6C5BC819C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -48,6 +54,7 @@ Global
 		{766E3A11-FB71-45A2-ACFA-E3DFE7D348AF} = {2D160326-00D5-4CB3-A34C-E4AB3D31AF68}
 		{03BC2389-0218-40EA-969A-915BA637AE3C} = {2D160326-00D5-4CB3-A34C-E4AB3D31AF68}
 		{B3187183-36F5-42BA-80D6-DBEC24F88831} = {011DD291-2986-42AF-BC03-D3F09441F8AB}
+		{7FE6445D-D541-42CC-AC92-BFE6C5BC819C} = {BD67D502-B52A-4D5E-8184-B2FDAA27EE7D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E5188887-53A9-4849-B41F-5FCD188B63F3}

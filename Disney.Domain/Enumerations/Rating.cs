@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Disney.Domain.Entities
+namespace Disney.Domain.Enumerations
 {
     public enum Rating
     {
