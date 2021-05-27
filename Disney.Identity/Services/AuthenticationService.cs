@@ -35,14 +35,14 @@ namespace Disney.Identity.Services
 
             if (user == null)
             {
-                throw new Exception($"User with {request.Email} not found.");
+                throw new Exception($"El correo {request.Email} no fue encontrado.");
             }
 
             var result = await _signInManager.PasswordSignInAsync(user.UserName, request.Password, false, lockoutOnFailure: false);
 
             if (!result.Succeeded)
             {
-                throw new Exception($"Credentials for '{request.Email} aren't valid'.");
+                throw new Exception($"Las credenciales para el correo '{request.Email}' no son validas'.");
             }
 
             JwtSecurityToken jwtSecurityToken = await GenerateToken(user);
@@ -64,7 +64,7 @@ namespace Disney.Identity.Services
 
             if (existingUser != null)
             {
-                throw new Exception($"Username '{request.UserName}' already exists.");
+                throw new Exception($"El usuario '{request.UserName}' ya existe.");
             }
 
             var user = new ApplicationUser
@@ -93,7 +93,7 @@ namespace Disney.Identity.Services
             }
             else
             {
-                throw new Exception($"Email {request.Email } already exists.");
+                throw new Exception($"El correo {request.Email } ya se encuentra registrado.");
             }
         }
 

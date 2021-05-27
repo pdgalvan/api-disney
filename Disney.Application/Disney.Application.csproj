@@ -33,4 +33,8 @@
     <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="9.0.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Models\Mail\" />
+  </ItemGroup>
+
 </Project>

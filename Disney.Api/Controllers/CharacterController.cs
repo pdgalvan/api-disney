@@ -1,6 +1,7 @@
 ﻿using Disney.Application.Features.Characters.Commands.CreateCharacter;
 using Disney.Application.Features.Characters.Queries.GetCharacterList;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -20,7 +21,7 @@ namespace Disney.Api.Controllers
         {
             _mediator = mediator;
         }
-
+        [Authorize]
         [HttpGet("all", Name = "GetAllCharacters")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         public async Task<ActionResult<List<CharacterListVm>>> GetAllCharacters()
@@ -29,6 +30,7 @@ namespace Disney.Api.Controllers
             return Ok(dtos);
         }
 
+        [Authorize]
         [HttpPost(Name = "AddCharacter")]
         public async Task<ActionResult<CreateCharacterCommandResponse>> Create([FromBody] CreateCharacterCommand createCharacterCommand)
         {

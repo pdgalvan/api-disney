@@ -78,3 +78,11 @@ C:\Users\gvpab\source\repos\Disney\Disney.Api\bin\Debug\netcoreapp3.1\Microsoft.
 C:\Users\gvpab\source\repos\Disney\Disney.Api\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\gvpab\source\repos\Disney\Disney.Api\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\gvpab\source\repos\Disney\Disney.Api\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\gvpab\source\repos\Disney\Disney.Api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\gvpab\source\repos\Disney\Disney.Api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\gvpab\source\repos\Disney\Disney.Api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\gvpab\source\repos\Disney\Disney.Api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\gvpab\source\repos\Disney\Disney.Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Core.dll
+C:\Users\gvpab\source\repos\Disney\Disney.Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\gvpab\source\repos\Disney\Disney.Api\bin\Debug\netcoreapp3.1\Disney.Identity.dll
+C:\Users\gvpab\source\repos\Disney\Disney.Api\bin\Debug\netcoreapp3.1\Disney.Identity.pdb

@@ -1,4 +1,5 @@
 using Disney.Application;
+using Disney.Identity;
 using Disney.Persistence;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -29,8 +30,10 @@ namespace Disney.Api
         public void ConfigureServices(IServiceCollection services)
         {
             AddSwagger(services);
+
             services.AddApplicationServices();
             services.AddPersistenceServices(Configuration);
+            services.AddIdentityServices(Configuration);
             services.AddControllers();
 
             services.AddCors(options =>
@@ -43,6 +46,35 @@ namespace Disney.Api
         {
             services.AddSwaggerGen(c =>
             {
+                c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+                {
+                    
+                    Description = @"Autorizacion usando Bearer scheme.",
+                    Name = "Authorization",
+                    In= ParameterLocation.Header,
+                    Type = SecuritySchemeType.ApiKey,
+                    Scheme = "Bearer"
+                });
+
+                c.AddSecurityRequirement(new OpenApiSecurityRequirement()
+                {
+                    {
+                        new OpenApiSecurityScheme
+                        {
+                            Reference = new OpenApiReference
+                            {
+                                Type = ReferenceType.SecurityScheme,
+                                Id = "Bearer"
+                            },
+                           Scheme = "oauth2",
+                           Name = "Bearer",
+                           In = ParameterLocation.Header,
+
+                        },
+                        new List<String>()
+                    }
+                });
+
                 c.SwaggerDoc("v1", new OpenApiInfo
                 {
                     Version = "v1",
@@ -62,6 +94,7 @@ namespace Disney.Api
             app.UseHttpsRedirection();
 
             app.UseRouting();
+            app.UseAuthentication();
 
             app.UseSwagger();
             app.UseSwaggerUI(c =>
@@ -70,6 +103,8 @@ namespace Disney.Api
             });
 
             app.UseCors("Open");
+
+            app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {

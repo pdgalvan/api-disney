@@ -1,6 +1,7 @@
 ﻿using Disney.Application.Features.Movies.Commands.CreateMovie;
 using Disney.Application.Features.Movies.Queries.GetMovieList;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -20,7 +21,7 @@ namespace Disney.Api.Controllers
         {
             _mediator = mediator;
         }
-
+        [Authorize]
         [HttpGet("all", Name = "GetAllMovies")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         public async Task<ActionResult<List<MovieListVm>>> GetAllMovies()
@@ -29,6 +30,7 @@ namespace Disney.Api.Controllers
             return Ok(dtos);
         }
 
+        [Authorize]
         [HttpPost(Name = "AddMovie")]
         public async Task<ActionResult<CreateMovieCommandResponse>> Create([FromBody] CreateMovieCommand createMovieCommand)
         {
