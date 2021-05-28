@@ -17,6 +17,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Disney.Application\Disney.Application.csproj" />
     <ProjectReference Include="..\Disney.Identity\Disney.Identity.csproj" />
+    <ProjectReference Include="..\Disney.Infrastructure\Disney.Infrastructure.csproj" />
     <ProjectReference Include="..\Disney.Persistence\Disney.Persistence.csproj" />
   </ItemGroup>
 

@@ -1,0 +1,53 @@
+[33mcommit 4f1f4e6a8b3a608a4cdba165fd0392591b07f799[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: Pablo <gvpablodaniel@gmail.com>
+Date:   Thu May 27 22:23:07 2021 -0300
+
+    login and register added
+
+[33mcommit 908520230c850dd9c4604371460bd2fb0576388d[m
+Author: Pablo <gvpablodaniel@gmail.com>
+Date:   Wed May 26 22:37:26 2021 -0300
+
+    Authentication added
+
+[33mcommit 79d6cf7e883b539b940037240eaab97bcb766679[m
+Author: Pablo <gvpablodaniel@gmail.com>
+Date:   Wed May 26 00:25:35 2021 -0300
+
+    Entity layer added
+
+[33mcommit 3580ce7d4d7640b5adff2d7f6387ea160e903393[m
+Author: Pablo <gvpablodaniel@gmail.com>
+Date:   Tue May 25 14:30:41 2021 -0300
+
+    Controllers added
+
+[33mcommit 7b82353aabae2747858dcaea4ba3fa40c4c67796[m
+Author: Pablo <gvpablodaniel@gmail.com>
+Date:   Mon May 24 22:32:11 2021 -0300
+
+    first steps on Api layer
+
+[33mcommit 90e9d8629a74534bcf650fe2266bfaf1947467c6[m
+Author: Pablo <gvpablodaniel@gmail.com>
+Date:   Mon May 24 12:56:46 2021 -0300
+
+    Persistence layer added
+
+[33mcommit 229cd4885490017f800981104c1cae6acce6c85c[m
+Author: Pablo <gvpablodaniel@gmail.com>
+Date:   Sun May 23 21:54:29 2021 -0300
+
+    Command Queries Character Movie added
+
+[33mcommit 733c9834fb96115cbacd369070d0013393cd1a6e[m
+Author: Pablo Galvan <32844503+pdgalvan@users.noreply.github.com>
+Date:   Sun May 23 09:22:07 2021 -0300
+
+    README file added
+
+[33mcommit 7354a775e31b55c6d5c8362007749d6b50eec676[m
+Author: Pablo <gvpablodaniel@gmail.com>
+Date:   Sun May 23 09:07:35 2021 -0300
+
+    Application and Domain layers added

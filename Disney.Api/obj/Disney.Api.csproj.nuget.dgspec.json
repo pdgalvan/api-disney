@@ -34,6 +34,9 @@
               "C:\\Users\\gvpab\\source\\repos\\Disney\\Disney.Identity\\Disney.Identity.csproj": {
                 "projectPath": "C:\\Users\\gvpab\\source\\repos\\Disney\\Disney.Identity\\Disney.Identity.csproj"
               },
+              "C:\\Users\\gvpab\\source\\repos\\Disney\\Disney.Infrastructure\\Disney.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\gvpab\\source\\repos\\Disney\\Disney.Infrastructure\\Disney.Infrastructure.csproj"
+              },
               "C:\\Users\\gvpab\\source\\repos\\Disney\\Disney.Persistence\\Disney.Persistence.csproj": {
                 "projectPath": "C:\\Users\\gvpab\\source\\repos\\Disney\\Disney.Persistence\\Disney.Persistence.csproj"
               }
@@ -286,6 +289,74 @@
             "System.IdentityModel.Tokens.Jwt": {
               "target": "Package",
               "version": "[6.11.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\gvpab\\source\\repos\\Disney\\Disney.Infrastructure\\Disney.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\gvpab\\source\\repos\\Disney\\Disney.Infrastructure\\Disney.Infrastructure.csproj",
+        "projectName": "Disney.Infrastructure",
+        "projectPath": "C:\\Users\\gvpab\\source\\repos\\Disney\\Disney.Infrastructure\\Disney.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\gvpab\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\gvpab\\source\\repos\\Disney\\Disney.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\gvpab\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "C:\\Users\\gvpab\\source\\repos\\Disney\\Disney.Application\\Disney.Application.csproj": {
+                "projectPath": "C:\\Users\\gvpab\\source\\repos\\Disney\\Disney.Application\\Disney.Application.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.Extensions.Options.ConfigurationExtensions": {
+              "target": "Package",
+              "version": "[3.1.15, )"
+            },
+            "SendGrid": {
+              "target": "Package",
+              "version": "[9.23.2, )"
             }
           },
           "imports": [

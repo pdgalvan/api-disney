@@ -1,5 +1,6 @@
 using Disney.Application;
 using Disney.Identity;
+using Disney.Infrastructure;
 using Disney.Persistence;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -32,6 +33,7 @@ namespace Disney.Api
             AddSwagger(services);
 
             services.AddApplicationServices();
+            services.AddInfrastructureServices(Configuration);
             services.AddPersistenceServices(Configuration);
             services.AddIdentityServices(Configuration);
             services.AddControllers();
@@ -49,14 +51,14 @@ namespace Disney.Api
                 c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
                 {
                     
-                    Description = @"Autorizacion usando Bearer scheme.",
+                    Description = @"Escribi  `Bearer` [espacio] y  el token generado.",
                     Name = "Authorization",
                     In= ParameterLocation.Header,
                     Type = SecuritySchemeType.ApiKey,
                     Scheme = "Bearer"
                 });
 
-                c.AddSecurityRequirement(new OpenApiSecurityRequirement()
+                c.AddSecurityRequirement(new OpenApiSecurityRequirement
                 {
                     {
                         new OpenApiSecurityScheme
@@ -64,10 +66,11 @@ namespace Disney.Api
                             Reference = new OpenApiReference
                             {
                                 Type = ReferenceType.SecurityScheme,
-                                Id = "Bearer"
+                                Id = "Bearer",
                             },
-                           Scheme = "oauth2",
-                           Name = "Bearer",
+                           //Scheme = "oauth2",
+                           Name = "Token",
+                           Type=SecuritySchemeType.ApiKey,
                            In = ParameterLocation.Header,
 
                         },
