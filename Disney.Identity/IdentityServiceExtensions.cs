@@ -1,5 +1,7 @@
-﻿using Disney.Application.Models.Authentication;
+﻿using Disney.Application.Contracts.Identity;
+using Disney.Application.Models.Authentication;
 using Disney.Identity.Models;
+using Disney.Identity.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
@@ -28,6 +30,8 @@ namespace Disney.Identity
             services.AddIdentity<ApplicationUser, IdentityRole>()
                 .AddEntityFrameworkStores<DisneyIdentityDbContext>()
                 .AddDefaultTokenProviders();
+
+            services.AddTransient<IAuthenticationService, AuthenticationService>();
 
             services.AddAuthentication(options =>
             {

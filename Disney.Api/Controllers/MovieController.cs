@@ -21,6 +21,7 @@ namespace Disney.Api.Controllers
         {
             _mediator = mediator;
         }
+        
         [Authorize]
         [HttpGet("all", Name = "GetAllMovies")]
         [ProducesResponseType(StatusCodes.Status200OK)]
