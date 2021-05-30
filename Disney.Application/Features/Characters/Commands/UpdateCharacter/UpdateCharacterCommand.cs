@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Disney.Application.Features.Characters.Commands.UpdateCharacter
 {
-    class UpdateCharacterCommand : IRequest
+    public class UpdateCharacterCommand : IRequest
     {
         public Guid CharacterId { get; set; }
         public string Name { get; set; }
@@ -13,5 +13,7 @@ namespace Disney.Application.Features.Characters.Commands.UpdateCharacter
         public int Weight { get; set; }
         public string Description { get; set; }
         public string ImageUrl { get; set; }
+
+        public List<Guid> Movies { get; set; }
     }
 }

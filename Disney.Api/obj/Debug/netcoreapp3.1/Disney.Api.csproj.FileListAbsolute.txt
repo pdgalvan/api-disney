@@ -76,7 +76,6 @@ C:\Users\gvpab\source\repos\Disney\Disney.Api\obj\Debug\netcoreapp3.1\Disney.Api
 C:\Users\gvpab\source\repos\Disney\Disney.Api\obj\Debug\netcoreapp3.1\Disney.Api.AssemblyInfoInputs.cache
 C:\Users\gvpab\source\repos\Disney\Disney.Api\obj\Debug\netcoreapp3.1\Disney.Api.AssemblyInfo.cs
 C:\Users\gvpab\source\repos\Disney\Disney.Api\obj\Debug\netcoreapp3.1\Disney.Api.csproj.CoreCompileInputs.cache
-C:\Users\gvpab\source\repos\Disney\Disney.Api\obj\Debug\netcoreapp3.1\Disney.Api.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\gvpab\source\repos\Disney\Disney.Api\obj\Debug\netcoreapp3.1\Disney.Api.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\gvpab\source\repos\Disney\Disney.Api\obj\Debug\netcoreapp3.1\staticwebassets\Disney.Api.StaticWebAssets.Manifest.cache
 C:\Users\gvpab\source\repos\Disney\Disney.Api\obj\Debug\netcoreapp3.1\staticwebassets\Disney.Api.StaticWebAssets.xml

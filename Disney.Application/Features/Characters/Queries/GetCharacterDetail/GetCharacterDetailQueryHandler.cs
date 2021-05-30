@@ -13,11 +13,10 @@ namespace Disney.Application.Features.Characters.Queries.GetCharacterDetail
     class GetCharacterDetailQueryHandler : IRequestHandler<GetCharacterDetailQuery, CharacterDetailVm>
     {
         private readonly IMapper _mapper;
-        private readonly IAsyncRepository<Character> _characterRepository;
+        private readonly ICharacterRepository _characterRepository;
 
         public GetCharacterDetailQueryHandler(IMapper mapper,
-                                              IAsyncRepository<Character> characterRepository)
-                                              
+                                              ICharacterRepository characterRepository)
         {
             _mapper = mapper;
             _characterRepository = characterRepository;
@@ -26,10 +25,14 @@ namespace Disney.Application.Features.Characters.Queries.GetCharacterDetail
         public async Task<CharacterDetailVm> Handle(GetCharacterDetailQuery request,
                                               CancellationToken cancellationToken)
         {
-            var @character = await _characterRepository.GetByIdAsync(request.Id);
-            var characterDetailDto = _mapper.Map<CharacterDetailVm>(@character);
+            var character = await _characterRepository.GetCharacterDetails(request.Id);
+            var characterDetailVm = _mapper.Map<CharacterDetailVm>(character);
 
-            return characterDetailDto;
+            characterDetailVm.Movies = new List<MovieDto>();
+            foreach (var movieCharacter in character.MovieCharacters)
+                characterDetailVm.Movies.Add(_mapper.Map<MovieDto>(movieCharacter.Movie));
+
+            return characterDetailVm;
         }
     }
 }

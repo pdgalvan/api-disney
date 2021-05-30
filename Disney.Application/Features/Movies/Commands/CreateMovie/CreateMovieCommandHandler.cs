@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using Disney.Application.Contracts.Persistence;
 using Disney.Domain.Entities;
+using Disney.Domain.Enumerations;
 using MediatR;
 using System.Collections.Generic;
 using System.Threading;
@@ -38,9 +39,8 @@ namespace Disney.Application.Features.Movies.Commands.CreateMovie
             }
             if(createMovieCommandResponse.Success)
             {
-                var movie = new Movie() { Name = request.Name };
-                movie = await _movieRepository.AddAsync(movie);
-                createMovieCommandResponse.Movie = _mapper.Map<CreateMovieDto>(movie);
+                var movie = await _movieRepository.AddAsync(new Movie() { Name = request.Name, ReleaseDate = request.ReleaseDate, ImageUrl = request.ImageUrl, Rating = (Rating)request.Rating });
+                createMovieCommandResponse.MovieId = movie.MovieId;
             }
             return createMovieCommandResponse;
         }

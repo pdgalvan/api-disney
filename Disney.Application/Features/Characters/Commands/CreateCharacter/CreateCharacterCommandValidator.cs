@@ -11,9 +11,9 @@ namespace Disney.Application.Features.Characters.Commands.CreateCharacter
         public CreateCharacterCommandValidator()
         {
             RuleFor(c => c.Name)
-                .NotEmpty().WithMessage("{PropertyName} is required")
+                .NotEmpty().WithMessage("{PropertyName} es requerido")
                 .NotNull()
-                .MaximumLength(50).WithMessage("{PropertyName} must not exceed ... ");
+                .MaximumLength(50).WithMessage("{PropertyName} no debe exceder los 50 caracteres ");
         }
         
     }

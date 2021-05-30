@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Disney.Application.Features.Characters.Queries.GetCharacterDetail
 {
-    class GetCharacterDetailQuery : IRequest<CharacterDetailVm>
+    public class GetCharacterDetailQuery : IRequest<CharacterDetailVm>
     {
         public Guid Id { get; set; }
     }

@@ -14,10 +14,10 @@ namespace Disney.Application.Features.Characters.Queries.GetCharacterList
     public class GetCharacterListQueryHandler : IRequestHandler<GetCharacterListQuery, List<CharacterListVm>>
     {
         private readonly IMapper _mapper;
-        private readonly IAsyncRepository<Character> _characterRepository;
+        private readonly ICharacterRepository _characterRepository;
 
         public GetCharacterListQueryHandler(IMapper mapper,
-                                            IAsyncRepository<Character> characterRepository )
+                                            ICharacterRepository characterRepository )
         {
             _mapper = mapper;
             _characterRepository = characterRepository;
@@ -25,7 +25,7 @@ namespace Disney.Application.Features.Characters.Queries.GetCharacterList
         public async Task<List<CharacterListVm>> Handle(GetCharacterListQuery request, 
                                                   CancellationToken cancellationToken)
         {
-            var allCharacters = (await _characterRepository.ListAllAsync()).OrderBy(x => x.Name);
+            var allCharacters = await _characterRepository.GetCharacters(request);
             return _mapper.Map<List<CharacterListVm>>(allCharacters);
         }
     }

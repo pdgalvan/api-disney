@@ -39,9 +39,8 @@ namespace Disney.Application.Features.Characters.Commands.CreateCharacter
             }
             if (createCharacterCommandResponse.Success)
             {
-                var character = new Character() { Name = request.Name };
-                character = await _characterRepository.AddAsync(character);
-                createCharacterCommandResponse.Character = _mapper.Map<CreateCharacterDto>(character);
+                var character = await _characterRepository.AddAsync(new Character() { Name = request.Name, Age=request.Age, Weight= request.Weight , Description = request.Description, ImageUrl = request.ImageUrl });
+                createCharacterCommandResponse.CharacterId = character.CharacterId;
               }
             return createCharacterCommandResponse;
         }

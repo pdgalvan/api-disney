@@ -6,7 +6,7 @@ namespace Disney.Domain.Entities
 {
     public class MovieCharacter
     {
-        public Guid MovieId { get; set; }
+        public  Guid MovieId { get; set; }
         public Movie Movie { get; set; }
 
         public Guid CharacterId { get; set; }

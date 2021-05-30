@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace Disney.Application.Features.Characters.Commands.UpdateCharacter
 {
-    class UpdateCharacterCommandHandler : IRequestHandler<UpdateCharacterCommand>
+    public class UpdateCharacterCommandHandler : IRequestHandler<UpdateCharacterCommand>
     {
         private readonly IMapper _mapper;
         private readonly IAsyncRepository<Character> _characterRepository;

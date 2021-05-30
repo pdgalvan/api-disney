@@ -10,7 +10,10 @@ namespace Disney.Application.Features.Movies.Commands.CreateMovie
         
         public string Name { get; set; }
         public DateTime ReleaseDate { get; set; }
-        //public Rating Rating { get; set; }
+        public int Rating { get; set; }
         public string ImageUrl { get; set; }
+
+        public List<Guid> Characters { get; set; }
+        public List<Guid> Genres { get; set; }
     }
 }

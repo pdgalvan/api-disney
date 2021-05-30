@@ -8,15 +8,16 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Linq;
+
 namespace Disney.Application.Features.Movies.Queries.GetMovieList
 {
     public class GetMovieListQueryHandler : IRequestHandler<GetMovieListQuery, List<MovieListVm>>
     {
         private readonly IMapper _mapper;
-        private readonly IAsyncRepository<Movie> _movieRepository;
+        private readonly IMovieRepository _movieRepository;
 
         public GetMovieListQueryHandler(IMapper mapper,
-                                        IAsyncRepository<Movie> movieRepository)
+                                        IMovieRepository movieRepository)
         {
             _mapper = mapper;
             _movieRepository = movieRepository;
@@ -24,7 +25,8 @@ namespace Disney.Application.Features.Movies.Queries.GetMovieList
         }
         public async Task<List<MovieListVm>> Handle(GetMovieListQuery request, CancellationToken cancellationToken)
         {
-            var allMovies = (await _movieRepository.ListAllAsync()).OrderBy(x => x.ReleaseDate);
+            
+            var allMovies = (await _movieRepository.GetMovies(request));
             return _mapper.Map<List<MovieListVm>>(allMovies);
         }
     }

@@ -1,10 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace Disney.Application.Features.Characters.Queries.GetCharacterDetail
 {
-    class CharacterDetailVm
+    public class CharacterDetailVm
     {
         public Guid CharacterId { get; set; }
         public string Name { get; set; }
@@ -13,5 +12,6 @@ namespace Disney.Application.Features.Characters.Queries.GetCharacterDetail
         public string Description { get; set; }
         public string ImageUrl { get; set; }
 
+        public List<MovieDto> Movies { get; set; }
     }
 }

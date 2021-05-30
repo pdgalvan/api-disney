@@ -13,6 +13,6 @@ namespace Disney.Application.Features.Movies.Commands.CreateMovie
 
         }
 
-        public CreateMovieDto Movie { get; set; }
+        public Guid MovieId { get; set; }
     }
 }

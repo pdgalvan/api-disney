@@ -2,6 +2,7 @@
 using Disney.Application.Contracts.Infrastructure;
 using Disney.Application.Models.Authentication;
 using Disney.Application.Models.Mail;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Threading.Tasks;
@@ -21,6 +22,7 @@ namespace Disney.Api.Controllers
             _authenticationService = authenticationService;
             _emailService = emailService;
         }
+
         [HttpPost("login")]
         public async Task<ActionResult<AuthenticationResponse>> AuthenticateAsync(AuthenticationRequest request)
         {
@@ -28,12 +30,13 @@ namespace Disney.Api.Controllers
 
         }
 
+        [AllowAnonymous]
         [HttpPost("register")]
         public async Task<ActionResult<RegistrationResponse>> RegisterAsync(RegistrationRequest request)
         {
 
             var response = await _authenticationService.RegisterAsync(request);
-            if(response!= null)
+            if(response.UserId != null)
             {
                 var email = new Email() { To = request.Email, Body = $"Su cuenta ha sido creada: {request.UserName}", Subject = "Cuenta creada" };
                 try

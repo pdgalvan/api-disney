@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace Disney.Application.Features.Characters.Commands.DeleteCharacter
 {
-    class DeleteCharacterCommandHandler : IRequestHandler<DeleteCharacterCommand>
+    public class DeleteCharacterCommandHandler : IRequestHandler<DeleteCharacterCommand>
     {
         private readonly IMapper _mapper;
         private readonly IAsyncRepository<Character> _characterRepository;

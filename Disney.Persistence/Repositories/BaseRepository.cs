@@ -2,8 +2,6 @@
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace Disney.Persistence.Repositories
@@ -31,6 +29,7 @@ namespace Disney.Persistence.Repositories
 
         public virtual async Task<T> GetByIdAsync(Guid id)
         {
+            
             return await _dbContext.Set<T>().FindAsync(id);
         }
 

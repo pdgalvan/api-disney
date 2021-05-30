@@ -3,7 +3,7 @@ using System;
 
 namespace Disney.Application.Features.Movies.Queries.GetMovieDetail
 {
-    class GetMovieDetailQuery : IRequest<MovieDetailVm>
+    public class GetMovieDetailQuery : IRequest<MovieDetailVm>
     {
         public Guid Id { get; set; }
     }
