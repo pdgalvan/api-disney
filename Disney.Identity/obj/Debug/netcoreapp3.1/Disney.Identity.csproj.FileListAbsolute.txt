@@ -9,7 +9,6 @@ C:\Users\gvpab\source\repos\Disney\Disney.Identity\bin\Debug\netcoreapp3.1\Disne
 C:\Users\gvpab\source\repos\Disney\Disney.Identity\bin\Debug\netcoreapp3.1\Disney.Domain.dll
 C:\Users\gvpab\source\repos\Disney\Disney.Identity\bin\Debug\netcoreapp3.1\Disney.Application.pdb
 C:\Users\gvpab\source\repos\Disney\Disney.Identity\bin\Debug\netcoreapp3.1\Disney.Domain.pdb
-C:\Users\gvpab\source\repos\Disney\Disney.Identity\obj\Debug\netcoreapp3.1\Disney.Identity.csprojAssemblyReference.cache
 C:\Users\gvpab\source\repos\Disney\Disney.Identity\obj\Debug\netcoreapp3.1\Disney.Identity.AssemblyInfoInputs.cache
 C:\Users\gvpab\source\repos\Disney\Disney.Identity\obj\Debug\netcoreapp3.1\Disney.Identity.AssemblyInfo.cs
 C:\Users\gvpab\source\repos\Disney\Disney.Identity\obj\Debug\netcoreapp3.1\Disney.Identity.csproj.CoreCompileInputs.cache
@@ -17,3 +16,4 @@ C:\Users\gvpab\source\repos\Disney\Disney.Identity\obj\Debug\netcoreapp3.1\Disne
 C:\Users\gvpab\source\repos\Disney\Disney.Identity\obj\Debug\netcoreapp3.1\Disney.Identity.dll
 C:\Users\gvpab\source\repos\Disney\Disney.Identity\obj\Debug\netcoreapp3.1\Disney.Identity.pdb
 C:\Users\gvpab\source\repos\Disney\Disney.Identity\obj\Debug\netcoreapp3.1\Disney.Identity.genruntimeconfig.cache
+C:\Users\gvpab\source\repos\Disney\Disney.Identity\obj\Debug\netcoreapp3.1\Disney.Identity.csproj.AssemblyReference.cache

@@ -1774,7 +1774,10 @@
         },
         "runtime": {
           "bin/placeholder/Disney.Application.dll": {}
-        }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       },
       "Disney.Domain/1.0.0": {
         "type": "project",
@@ -1802,7 +1805,10 @@
         },
         "runtime": {
           "bin/placeholder/Disney.Identity.dll": {}
-        }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       },
       "Disney.Infrastructure/1.0.0": {
         "type": "project",
@@ -1817,7 +1823,10 @@
         },
         "runtime": {
           "bin/placeholder/Disney.Infrastructure.dll": {}
-        }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       },
       "Disney.Persistence/1.0.0": {
         "type": "project",
@@ -1832,7 +1841,10 @@
         },
         "runtime": {
           "bin/placeholder/Disney.Persistence.dll": {}
-        }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       }
     }
   },
@@ -6571,7 +6583,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.300\\RuntimeIdentifierGraph.json"
       }
     }
   }

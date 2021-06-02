@@ -20,7 +20,7 @@ namespace Disney.Api.Controllers
         {
             _mediator = mediator;
         }
-        
+        [Authorize]
         [HttpPost]
         public async Task<ActionResult<CreateGenreCommandResponse>> Create ([FromBody] CreateGenreCommand createGenreCommand)
         {

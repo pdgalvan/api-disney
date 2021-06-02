@@ -6,4 +6,4 @@ C:\Users\gvpab\source\repos\Disney\Disney.Domain\obj\Debug\netcoreapp3.1\Disney.
 C:\Users\gvpab\source\repos\Disney\Disney.Domain\obj\Debug\netcoreapp3.1\Disney.Domain.csproj.CoreCompileInputs.cache
 C:\Users\gvpab\source\repos\Disney\Disney.Domain\obj\Debug\netcoreapp3.1\Disney.Domain.dll
 C:\Users\gvpab\source\repos\Disney\Disney.Domain\obj\Debug\netcoreapp3.1\Disney.Domain.pdb
-C:\Users\gvpab\source\repos\Disney\Disney.Domain\obj\Debug\netcoreapp3.1\Disney.Domain.csprojAssemblyReference.cache
+C:\Users\gvpab\source\repos\Disney\Disney.Domain\obj\Debug\netcoreapp3.1\Disney.Domain.csproj.AssemblyReference.cache
