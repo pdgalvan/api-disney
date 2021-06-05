@@ -29,11 +29,12 @@ namespace Disney.Persistence.Repositories
 
         public async Task<List<Character>> GetCharacters(GetCharacterListQuery request)
         {
-            var characterList = await _dbContext.Characters.ToListAsync();
+            var characterList = await _dbContext.Characters.Include(x=> x.MovieCharacters).ToListAsync();
 
             if(request.MovieId != null)
             {
-                //TODO
+                characterList = characterList.Where(c => c.MovieCharacters.Any(mc => mc.MovieId == request.MovieId))
+                    .ToList();
             }
             if(request.Age != null)
             {

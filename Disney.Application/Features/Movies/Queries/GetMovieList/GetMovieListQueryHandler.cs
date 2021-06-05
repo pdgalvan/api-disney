@@ -23,7 +23,8 @@ namespace Disney.Application.Features.Movies.Queries.GetMovieList
             _movieRepository = movieRepository;
 
         }
-        public async Task<List<MovieListVm>> Handle(GetMovieListQuery request, CancellationToken cancellationToken)
+        public async Task<List<MovieListVm>> Handle(GetMovieListQuery request,
+                                                    CancellationToken cancellationToken)
         {
             
             var allMovies = (await _movieRepository.GetMovies(request));

@@ -22,6 +22,7 @@ namespace Disney.Application.Features.Characters.Queries.GetCharacterList
                                                   CancellationToken cancellationToken)
         {
             var allCharacters = await _characterRepository.GetCharacters(request);
+            
             return _mapper.Map<List<CharacterListVm>>(allCharacters);
         }
     }

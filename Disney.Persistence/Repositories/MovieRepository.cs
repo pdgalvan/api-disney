@@ -47,10 +47,12 @@ namespace Disney.Persistence.Repositories
 
             if(getMovieListQuery.OrderbyDate != null)
             {
-                if(getMovieListQuery.OrderbyDate == "asc") movieList = movieList.OrderBy(x => x.ReleaseDate).ToList();
-                
-                if(getMovieListQuery.OrderbyDate == "desc") movieList = movieList.OrderByDescending(x => x.ReleaseDate).ToList();
-                
+                movieList = getMovieListQuery.OrderbyDate switch
+                {
+                    "asc" => movieList.OrderBy(x => x.ReleaseDate).ToList(),
+                    "desc" => movieList.OrderByDescending(x => x.ReleaseDate).ToList(),
+                    _ => movieList
+                };
             }
 
             return movieList;
