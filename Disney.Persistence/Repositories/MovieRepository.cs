@@ -31,12 +31,13 @@ namespace Disney.Persistence.Repositories
 
         public async Task<List<Movie>> GetMovies(GetMovieListQuery getMovieListQuery)
         {
-            var movieList = await _dbContext.Movies.ToListAsync();
+            var movieList = await _dbContext.Movies.Include(x => x.MovieGenres).ToListAsync();
 
-            // Error: System.ArgumentNullException: Value cannot be null. << Al buscar por GenreId devuelve un NullException 
+             
             if (getMovieListQuery.GenreId != null)
             {
-                movieList = movieList.Where(m => m.MovieGenres.Select(mg => mg.GenreId== getMovieListQuery.GenreId).Any()).ToList();
+                movieList = movieList.Where(m => m.MovieGenres.Any(mg => mg.GenreId == getMovieListQuery.GenreId)).ToList();
+                
             }
 
             if(getMovieListQuery.Title != null)

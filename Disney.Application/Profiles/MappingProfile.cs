@@ -20,17 +20,21 @@ namespace Disney.Application.Profiles
     {
         public MappingProfile()
         {
-            CreateMap<Character, CharacterListVm>().ReverseMap();   
+            CreateMap<Character, CharacterListVm>().ReverseMap();
             CreateMap<Character, CharacterDetailVm>().ReverseMap();
             CreateMap<Movie, MovieListVm>().ReverseMap();
             CreateMap<Movie, MovieDetailVm>().ReverseMap();
+                
             CreateMap<Character, CharacterDto>().ReverseMap();
             CreateMap<Genre, GenreDto>().ReverseMap();
             CreateMap<Character, CreateCharacterCommand>().ReverseMap();
             CreateMap<Character, UpdateCharacterCommand>().ReverseMap();
             CreateMap<Movie, CreateMovieCommand>().ReverseMap();
             CreateMap<Movie, UpdateMovieCommand>().ReverseMap();
+            CreateMap<MovieCharacter, CharacterDto>()
+                .ForMember(d => d.CharacterId, opt => opt.MapFrom(s => s.CharacterId))
+                .ForMember(d => d.Name, opt => opt.MapFrom(s => s.Character.Name));
         }
-        
+
     }
 }

@@ -35,7 +35,7 @@ namespace Disney.Application.Features.Movies.Queries.GetMovieDetail
 
             foreach (var movieCharacter in movie.MovieCharacters)
                 movieDetailVm.Characters.Add(_mapper.Map<CharacterDto>(movieCharacter.Character));
-
+                
             return movieDetailVm;
         }
     }
