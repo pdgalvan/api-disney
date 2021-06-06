@@ -14,12 +14,14 @@ namespace Disney.Application.Features.Characters.Commands.UpdateCharacter
     {
         private readonly IMapper _mapper;
         private readonly IAsyncRepository<Character> _characterRepository;
+        private readonly IAsyncRepository<Movie> _movieRepository;
 
         public UpdateCharacterCommandHandler(IMapper mapper,
-                                             IAsyncRepository<Character> characterRepository)
+                                             IAsyncRepository<Character> characterRepository, IAsyncRepository<Movie> movieRepository)
         {
             _mapper = mapper;
             _characterRepository = characterRepository;
+            _movieRepository = movieRepository;
         }
         public  async Task<Unit> Handle(UpdateCharacterCommand request, CancellationToken cancellationToken)
         {

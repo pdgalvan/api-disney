@@ -14,7 +14,7 @@ namespace Disney.Persistence
         public DbSet<Character> Characters { get; set; }
         public DbSet<Movie> Movies { get; set; }
         public DbSet<Genre> Genres { get; set; }
-        //public DbSet<Rating> Ratings { get; set; }
+        
         public DbSet<MovieCharacter> MovieCharacters { get; set; }
         public DbSet<MovieGenre> MovieGenres { get; set; }
 
@@ -33,10 +33,12 @@ namespace Disney.Persistence
                 .WithMany(m => m.MovieGenres)
                 .HasForeignKey(mg => mg.MovieId);
 
+
             modelBuilder.Entity<MovieGenre>()
                 .HasOne(mg => mg.Genre)
                 .WithMany(g => g.MovieGenres)
                 .HasForeignKey(mg => mg.GenreId);
+                
 
 
             modelBuilder.Entity<MovieCharacter>()

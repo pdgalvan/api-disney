@@ -24,6 +24,7 @@ namespace Disney.Application.Profiles
             CreateMap<Character, CharacterDetailVm>().ReverseMap();
             CreateMap<Movie, MovieListVm>().ReverseMap();
             CreateMap<Movie, MovieDetailVm>().ReverseMap();
+            CreateMap<Movie, MovieDto>().ReverseMap();
             CreateMap<Character, CharacterDto>().ReverseMap();
             CreateMap<Genre, GenreDto>().ReverseMap();
             CreateMap<Character, CreateCharacterCommand>().ReverseMap();

@@ -13,6 +13,6 @@ namespace Disney.Application.Features.Characters.Commands.CreateCharacter
 
         }
 
-        public Guid CharacterId { get; set; }
+        public  Guid CharacterId { get; set; }
     }
 }
